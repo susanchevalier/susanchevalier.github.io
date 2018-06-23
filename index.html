@@ -1,8 +1,37 @@
 <!-- https://codegena.com/generator/vimeo-embed-code-generator -->
 <html>
 <title>Susan Chevalier Video Gallery</title>
-<h1> Susan Chevalier 2</h1>
-<iframe src='https://player.vimeo.com/video/272619887?' width='500px' height='294px' frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen ></iframe>
+<h1> Susan Chevalier </h1>
+<script>
+	var wrapper = document.getElementById("myHTMLWrapper");
+	var myHTML = '';
+	var vids = [ 
+				 "272619887",
+				 "272619495",
+				 "272619449",
+				 "272618239",
+				 "272618117",
+				 "272617852",
+				 "272617641",
+				 "272617433",
+				 "272609264",
+				 "272609055",
+				 "272608341",
+				 "272607891",
+				 "272606886",
+				 "272606874",
+				 "272606858",
+				 "272606844",
+				 "272606835",
+				 "272606803",
+	];
+	for (i = 0; i < vids.length; i++) { 
+		link = 'https://player.vimeo.com/video/' + i + '?';
+	    myHTML +=  "<iframe src=" + link + " width='500px' height='294px' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen ></iframe>";
+	}
+	wrapper.innerHTML = myHTML
+</script>
+
 <!-- <iframe src="http://player.vimeo.com/video/{video:service_id}" width="WIDTH" height="HEIGHT" ></iframe> -->
 
 </html>
